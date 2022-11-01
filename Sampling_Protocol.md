@@ -41,19 +41,16 @@ Can find samples
 ### Coordinates
 ### Life Stage
 ### High_temp
-
-![ ](https://github.com/kevinhwong1/DarkGenes_MetaAnalysis/blob/main/images/Acclimation_Example.png)
+![ ](https://github.com/kevinhwong1/DarkGenes_MetaAnalysis/blob/main/images/High_temp_Example.png)
 
 ### Control_Temp
-
-![ ]({{ site.baseurl}}/images/Control_Example.png " ")
+![ ](https://github.com/kevinhwong1/DarkGenes_MetaAnalysis/blob/main/images/Control_Example.png)
 
 ### Ramp_up_rate
-![ ]({{ site.baseurl}}/images/Ramp_Example.png " ")
-
+![ ](https://github.com/kevinhwong1/DarkGenes_MetaAnalysis/blob/main/images/Ramp_Example.png)
 
 ### Acclimation_Period
-![ ]({{ site.baseurl}}/images/Acclimation_Example.pngg " ")
+![ ](https://github.com/kevinhwong1/DarkGenes_MetaAnalysis/blob/main/images/Acclimation_Example.png)
 
 
 
