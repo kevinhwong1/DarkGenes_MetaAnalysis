@@ -2,7 +2,7 @@
 
 ## Overview:
 1. [**Confirm study is appropriate**](#confirm)
-2. [**Locate files and metadata**]((#locate)
+2. [**Locate files and metadata**](#locate)
 3. [**Input comparison metadata into “RNAseq_Data” spreadsheet**](#data)
 4. [**Input sample metadata into “RNAseq_Samples” spreadsheet**](#samples)
 5. [**Example**](#example)  
@@ -41,9 +41,22 @@ Can find samples
 ### Coordinates
 ### Life Stage
 ### High_temp
-### Ambient_Temp
+
+![ ]({{ site.baseurl}}/images/High_temp_Example.png " ")
+
+### Control_Temp
+
+![ ]({{ site.baseurl}}/images/Control_Example.png " ")
+
 ### Ramp_up_rate
+![ ]({{ site.baseurl}}/images/Ramp_Example.png " ")
+
+
 ### Acclimation_Period
+![ ]({{ site.baseurl}}/images/Acclimation_Example.pngg " ")
+
+
+
 ### Duration_inDay
 ### Replicates
 ### Num_Genotype
