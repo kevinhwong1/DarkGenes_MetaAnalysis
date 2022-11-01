@@ -42,7 +42,7 @@ Can find samples
 ### Life Stage
 ### High_temp
 
-![ ]({{ site.baseurl}}/images/High_temp_Example.png " ")
+![ ](https://github.com/kevinhwong1/DarkGenes_MetaAnalysis/blob/main/images/Acclimation_Example.png)
 
 ### Control_Temp
 
