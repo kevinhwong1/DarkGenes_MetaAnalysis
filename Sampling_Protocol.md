@@ -5,7 +5,6 @@
 2. [**Locate files and metadata**](#locate)
 3. [**Input comparison metadata into “RNAseq_Data” spreadsheet**](#data)
 4. [**Input sample metadata into “RNAseq_Samples” spreadsheet**](#samples)
-5. [**Example**](#example)  
 
 ## <a name="confirm"></a> Step 1: Confirm study is appropriate
 
@@ -31,11 +30,11 @@
   ![ ](https://github.com/kevinhwong1/DarkGenes_MetaAnalysis/blob/main/images/SRA_Example.png)
 
   3. Choose Destination: **File**
-  4. Format: **Summary**
-![ ](https://github.com/kevinhwong1/DarkGenes_MetaAnalysis/blob/main/images/Summary_Example.png)
+  4. Format: **RunInfo**
+![ ](https://github.com/kevinhwong1/DarkGenes_MetaAnalysis/blob/main/images/RunInfo_Example.png)
 
 
-This `sra_result.csv` file will provide you with most (but maybe not all) of the information needed for the following steps.
+This `SraRunInfo.csv` file will provide you with most (but maybe not all) of the information needed for the following steps. In this file, make sure you filter for only RNA-seq data and delete any other sequence data that is not relevant (e.g. amplicon sequencing)
 
 
 ## <a name="data"></a> Step 3: Input comparison metadata into “RNAseq_Data” spreadsheet
@@ -151,22 +150,74 @@ This `sra_result.csv` file will provide you with most (but maybe not all) of the
 
 ## <a name="samples"></a> Step 4: Input sample metadata into “RNAseq_Samples” spreadsheet
 
+* Next, we will address the samples corresponding to each Comparison_ID and you will find of the available information to fill the columns in [this spreadsheet](https://docs.google.com/spreadsheets/d/1ScX6AoRWQlxoszbX36I-pMBD5XGWKrxVqukirGzGOcI/edit#gid=0) under the appropriate “RNAseq_Samples” tab
+  * i.e. RNAseq_Samples_GH or RNAseq_Samples_ED
+* This spreadsheet is designed to have each row as a samples (i.e. ONE file)
+  * For example, if a study had an experimental design by comparing ambient temperatures (30&deg;C) to high (33&deg;C) with three samples per treatment group, there should be six samples (i.e. six rows) for this comparison.
+* Below I have provided a brief description of each column and potential ways on how to locate this information.
+* **NOTE:** If you are unsure about anything, please do not enter in the data. Just fill what you can and make a comment in the "Other_comments" column. Make a note of it and tell Kevin or Natalia.
 
 ### Treatment_ID
+
+* Treatment_ID is something that you can come up with that relates to that specific group within a comparison.
+* It should always start with the treatment (i.e. "HighTemp" or "Control") then any specific comparison descriptor (i.e. location)
+* Be consistent, name this logically, and do not include any spaces or special characters
+
 ### Comparison_ID
-### Study_Number
+
+* This should match the rows in the “RNAseq_Data” tab
+* The controls will likely be compared to more than one group if the study has multiple comparisons.
+  * If this occurs, then input the ID of the second comparison in the Comparison_ID_2 column. This will help us understand that this specific sample is used in multiple comparisons
+  * Rememeber that this should only be applied for the controls!
+
 ### DOI
+
+* See Step #3
+
 ### Reference
+
+* See Step #3
+
 ### Species
+
+* See Step #3
+
 ### TaxID
+
+* This numeric code is the taxonomic ID of the species on NCBI
+* This can be found on the NCBI BioProject web page and in the `SraRunInfo.csv` under the "TaxID" column
+
 ### Sample_Location
-### Coordinates
+
+* The can just be the specific reef site where the corals were collected from
+
 ### Life_Stage
+
+* See Step #3
+
 ### Library_Name
+
+* Each samples (i.e. row) should have a unique library name
+* You can copy this data over from the `SraRunInfo.csv` data sheet you downloaded from Step #2
+  * Ensure you are only copying over the RNAseq data and nothing other (e.g. amplicon seq data)
+
 ### Accession_Experiment
+
+* Each samples (i.e. row) should have a unique Experiment Accession
+* You can copy this data over from the `SraRunInfo.csv` data sheet you downloaded from Step #2
+  * Ensure you are only copying over the RNAseq data and nothing other (e.g. amplicon seq data)
+
 ### Temp
-### pH
+
+* This refers to the specific temperature this sample experienced in Celsius
+
 ### Symbiont_Type
+
+* If available, input the symbiont type that these corals harbored
+* Put NA if not clear
+
 ### Download_path
 
-## <a name="example"></a> Example
+* Each sample (i.e. row) should have a separate download path
+* Copy the contents of 'download_path' in the `SraRunInfo.csv` file
+  * Ensure you are only copying over the RNAseq data and nothing other (e.g. amplicon seq data)
