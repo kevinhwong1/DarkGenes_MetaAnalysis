@@ -21,8 +21,22 @@
 
 ## <a name="locate"></a> Step 2: Locate files and metadata
 
+* For each study in the *Methods* or *Data Availability* sections there should be statements relating to where the RNA-seq data can be located.
+* We are interested in taking data from [NCBI](https://www.ncbi.nlm.nih.gov/). You can retrieve this data by searching for the *BioProject* or *Accession Number*.
+* Once you have found the correct BioProject, use the following steps to find the metadata sheet:
+  1. Under "Project Data", click **SRA Experiments**
+![ ](https://github.com/kevinhwong1/DarkGenes_MetaAnalysis/blob/main/images/BioProject_Example.png)
 
-Can find samples
+  2. Click **Send to:**
+  ![ ](https://github.com/kevinhwong1/DarkGenes_MetaAnalysis/blob/main/images/SRA_Example.png)
+
+  3. Choose Destination: **File**
+  4. Format: **Summary**
+![ ](https://github.com/kevinhwong1/DarkGenes_MetaAnalysis/blob/main/images/Summary_Example.png)
+
+
+This `sra_result.csv` file will provide you with most (but maybe not all) of the information needed for the following steps.
+
 
 ## <a name="data"></a> Step 3: Input comparison metadata into “RNAseq_Data” spreadsheet
 
